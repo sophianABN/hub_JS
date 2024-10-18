@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { nom: "Exercice click", fichier: "click.html" },
         { nom: "Exercice DOM Event", fichier: "dom.html" },
         { nom: "Exercice Class", fichier: "class.html" },
+        { nom: "Exercice PME", fichier: "pme.html" },
     ];
 
     function creerListeExercices() {
