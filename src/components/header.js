@@ -4,7 +4,7 @@ export function createHeader() {
       <nav class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         <div class="flex items-center">
           <a href="/">
-            <img src="/avatar.jpg" alt="Logo" class="w-10 h-10 rounded-full mr-3">
+            <img src="/logoJS.png" ralt="Logo" class="w-10 h-10 rounded-full mr-3">
           </a>
           <span class="text-xl font-bold text-gray-800">SoHUB.JS</span>
         </div>
