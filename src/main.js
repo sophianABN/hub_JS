@@ -1,4 +1,11 @@
+import { createHeader } from './components/header.js';
+
 document.addEventListener('DOMContentLoaded', () => {
+  const headerContainer = document.getElementById('header-container');
+  if (headerContainer) {
+    headerContainer.innerHTML = createHeader();
+  }
+
   // Gestion des menus dropdowns
   const dropdowns = document.querySelectorAll('.dropdown-btn');
   

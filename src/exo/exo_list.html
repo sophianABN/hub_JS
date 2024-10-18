@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des Exercices</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="exo_list.js"></script>
 </head>
-<body class="bg-gray-100 h-screen">
-    <div class="max-w-6xl flex flex-col mx-auto p-6">
-        <header class="bg-white shadow-md mb-6 rounded-lg">
-            <h1 class="text-2xl font-bold text-gray-800 p-4">Liste des Exercices JavaScript</h1>
-        </header>
-        <main id="exercices-container" class="flex flex-col ml-4">
+<body class="bg-gray-50">
+    <div class="max-w-6xl mx-auto p-6">
+        <div id="header-container" class="mb-6"></div>
+        <main class="bg-white shadow-md rounded-lg p-6">
+            <h1 class="text-3xl font-bold mb-8">Liste des Exercices</h1>
+            <div id="exercices-container" class="mb-6"></div>
+            <div class="flex">
+                <a href="/" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">Retour à la page d'accueil</a>
+            </div>
         </main>
-        <div class="pt-6 flex ml-4">
-            <a href="/" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">Retour à la page d'accueil</a>
-        </div>
     </div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="exo_list.js"></script>
 </body>
 </html>
-

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const exercices = [
         { nom: "Exercice click", fichier: "click.html" },
         { nom: "Exercice DOM Event", fichier: "dom.html" },
+        { nom: "Exercice Class", fichier: "class.html" },
     ];
 
     function creerListeExercices() {

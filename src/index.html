@@ -10,103 +10,63 @@
 
 <body class="bg-gray-50">
   <div class="max-w-6xl mx-auto p-6">
-    <header class="bg-white shadow-md">
-      <nav class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        <div class="flex items-center">
-          <img src="avatar.jpg" alt="Logo" class="w-10 h-10 rounded-full mr-3">
-          <span class="text-xl font-bold text-gray-800">SoHUB.JS</span>
-        </div>
-        <ul class="flex space-x-6">
-          <li class="relative" id="dropdown-lecons">
-            <button class="dropdown-btn text-gray-600 hover:text-gray-900">Leçons ▼</button>
-            <div
-              class="dropdown-content hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200">
-              <a href="#" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Liste des leçons</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">leçon 1</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">leçon 2</a>
+    <div id="header-container" class="mb-6"></div>
+    <main class="bg-white shadow-md rounded-lg p-6">
+      <h1 class="text-3xl font-bold mb-8">Bienvenue sur le hub de cours Javascript</h1>
+      <div class="grid grid-cols-1 gap-8">
+
+        <section class="bg-white rounded-lg shadow p-6 flex flex-col items-center gap-6">
+          <div class="flex flex-row justify-between items-center">
+            <div class="w-1/2">
+              <img src="/lessons.jpg" alt="leçons illustration" class="w-32 h-32 object-cover rounded-lg p-2">
             </div>
-          </li>
-          <li class="relative" id="dropdown-exercices">
-            <button class="dropdown-btn text-gray-600 hover:text-gray-900">Exercices ▼</button>
-            <div
-              class="dropdown-content hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200">
-              <a href="/exo/exo_list.html" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Liste des exercices</a>
-              <a href="/exo/click.html" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Exo click</a>
-              <a href="/exo/dom.html" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Exo DOM Event</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Exercice 3</a>
+            <div class="w-1/2">
+              <h2 class="text-xl font-semibold mb-4">Leçons</h2>
+              <p class="text-gray-600 mb-6">
+                Vous y trouverez des leçons et exemples pour aborder différentes thématiques du Javascript Moderne
+              </p>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
+                Apprendre
+              </button>
             </div>
-          </li>
-          <li class="relative" id="dropdown-tp">
-            <button class="dropdown-btn text-gray-600 hover:text-gray-900">TP ▼</button>
-            <div
-              class="dropdown-content hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200">
-              <a href="#" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">Liste des TP</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">TP 1</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">TP 2</a>
-              <a href="#" class="block px-4 py-2 hover:bg-gray-50 text-gray-700">TP 3</a>
+          </div>
+        </section>
+
+        <section class="bg-white rounded-lg shadow p-6 flex flex-col items-center gap-6">
+          <div class="flex flex-row justify-between items-center">
+            <div class="w-1/2">
+              <h2 class="text-xl font-semibold mb-4">Exercices</h2>
+              <p class="text-gray-600 mb-6">
+                Trouvez des exercices pour pratiquer les leçons
+              </p>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
+                Pratiquer
+              </button>
             </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
+            <div class="w-1/2">
+              <img src="/exo.jpg" alt="Exercices illustration" class="w-32 h-32 object-cover rounded-lg p-2">
+            </div>
+          </div>
+        </section>
 
-    <div class="max-w-6xl mx-auto p-6">
-      <h1 class="text-2xl font-bold text-gray-800 ">Bienvenue sur le hub de cours Javascript</h1>
-    </div>
-
-    <div class="grid grid-cols-1 gap-8">
-
-      <section class="bg-white rounded-lg shadow p-6 flex flex-col items-center gap-6">
-        <div class="flex flex-row justify-between items-center">
-          <div class="w-1/2">
-            <img src="/lessons.jpg" alt="leçons illustration" class="w-32 h-32 object-cover rounded-lg p-2">
+        <section class="bg-white rounded-lg shadow p-6 flex flex-col items-center gap-6">
+          <div class="flex flex-row justify-between items-center">
+            <div class="w-1/2">
+              <img src="/lessons.jpg" alt="TP illustration" class="w-32 h-32 object-cover rounded-lg p-2">
+            </div>
+            <div class="w-1/2">
+              <h2 class="text-xl font-semibold mb-4">TP-Éval</h2>
+              <p class="text-gray-600 mb-6">
+                Réunissez vos connaissances pour s'évaluer
+              </p>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
+                TP-Eval
+              </button>
+            </div>
           </div>
-          <div class="w-1/2">
-            <h2 class="text-xl font-semibold mb-4">Leçons</h2>
-            <p class="text-gray-600 mb-6">
-              Vous y trouverez des leçons et exemples pour aborder différentes thématiques du Javascript Moderne
-            </p>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
-              Apprendre
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-white rounded-lg shadow p-6 flex flex-col items-center gap-6">
-        <div class="flex flex-row justify-between items-center">
-          <div class="w-1/2">
-            <h2 class="text-xl font-semibold mb-4">Exercices</h2>
-            <p class="text-gray-600 mb-6">
-              Trouvez des exercices pour pratiquer les leçons
-            </p>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
-              Pratiquer
-            </button>
-          </div>
-          <div class="w-1/2">
-            <img src="/exo.jpg" alt="Exercices illustration" class="w-32 h-32 object-cover rounded-lg p-2">
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-white rounded-lg shadow p-6 flex flex-col items-center gap-6">
-        <div class="flex flex-row justify-between items-center">
-          <div class="w-1/2">
-            <img src="/lessons.jpg" alt="TP illustration" class="w-32 h-32 object-cover rounded-lg p-2">
-          </div>
-          <div class="w-1/2">
-            <h2 class="text-xl font-semibold mb-4">TP-Éval</h2>
-            <p class="text-gray-600 mb-6">
-              Réunissez vos connaissances pour s'évaluer
-            </p>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">
-              TP-Eval
-            </button>
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </main>
   </div>
   <script type="module" src="/main.js"></script>
 </body>

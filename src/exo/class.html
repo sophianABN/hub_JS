@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3 - Classes</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-6xl mx-auto p-6">
+        <div id="header-container" class="mb-6"></div>
+        <main class="bg-white shadow-md rounded-lg p-6">
+            <h1 class="text-3xl font-bold mb-8">Exercice 3 - Classes</h1>
+            <div class="flex mb-4">
+                <a href="/" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">Retour à la page d'accueil</a>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md">
+                <h2 class="text-2xl font-semibold mb-4">Calcul d'IMC</h2>
+                <form id="imcForm" class="space-y-4">
+                    <div>
+                        <label for="nom" class="block text-sm font-medium text-gray-700">Nom</label>
+                        <input type="text" id="nom" name="nom" class="mt-1 block w-full" required>
+                    </div>
+                    <div>
+                        <label for="poids" class="block text-sm font-medium text-gray-700">Poids (kg)</label>
+                        <input type="number" id="poids" name="poids" step="0.1" class="mt-1 block w-full" required>
+                    </div>
+                    <div>
+                        <label for="taille" class="block text-sm font-medium text-gray-700">Taille (m)</label>
+                        <input type="number" id="taille" name="taille" step="0.01" class="mt-1 block w-full" required>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md">Calculer</button>
+                </form>
+                <div id="result" class="mt-4"></div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script src="class.js"></script>
+</body>
+</html>
