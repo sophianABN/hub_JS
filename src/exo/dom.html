@@ -6,63 +6,61 @@
     <title>Exercices D.O.M Events</title>
     <link href="/style.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
+<body class="bg-black">
     <div class="max-w-6xl mx-auto p-6">
         <div id="header-container" class="mb-6"></div>
-        <main class="bg-white shadow-md rounded-lg p-6">
-            <h1 id="title" class="text-3xl font-bold mb-8">Exercices D.O.M Events</h1>
-            <div class="mb-6">
-                <a href="/" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors">Retour à la page d'accueil</a>
-            </div>
+        <main class="bg-[#0e0e0e] shadow-md rounded-lg p-6">
+            <h1 id="title" class="text-3xl font-bold mb-8 text-white">Exercices D.O.M Events</h1>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-amber-50 p-6 rounded-lg shadow">
+                <div id="content" class="bg-[#18181b] bg-opacity-90 p-6 rounded-lg shadow">
                     <!-- le h2 "yoyoyo est ajouté dynamiquement par le js"-->
                     <div class="flex gap-4 mb-6">
-                        <button class="text-blue-600 hover:underline">Ajouter Classe</button>
-                        <button class="text-blue-600 hover:underline">Supprimer Classe</button>
-                        <button class="text-blue-600 hover:underline">Toggle Classe</button>
+                        <button class="text-[#fb923c] hover:text-[#f97316]">Ajouter Classe</button>
+                        <button class="text-[#fb923c] hover:text-[#f97316]">Supprimer Classe</button>
+                        <button class="text-[#fb923c] hover:text-[#f97316]">Toggle Classe</button>
                     </div>
 
                     <form class="space-y-4">
                         <div>
-                            <label class="block text-gray-700 mb-2">Email </label>
+                            <label class="block text-gray-200 mb-2">Email </label>
                             <input type="email" 
                                    placeholder="name@example.com"
-                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                   class="w-full px-4 py-2 bg-[#433b36e6] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
 
                         <div>
-                            <label class="block text-gray-700 mb-2">Pseudo</label>
+                            <label class="block text-gray-200 mb-2">Pseudo</label>
                             <input type="text" 
                                    placeholder="pseudo"
-                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                   class="w-full px-4 py-2 bg-[#433b36e6] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
 
                         <div>
-                            <label class="block text-gray-700 mb-2">Password</label>
+                            <label class="block text-gray-200 mb-2">Password</label>
                             <input type="text" 
                                    placeholder="mot de passe"
-                                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                   class="w-full px-4 py-2 bg-[#433b36e6] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                         </div>
 
                         <div>
-                            <label class="block text-gray-700 mb-2">Example textarea</label>
+                            <label class="block text-gray-200 mb-2">Example textarea</label>
                             <textarea 
                                 rows="6"
-                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                class="w-full text-white px-4 py-2 bg-[#433b36e6] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                             ></textarea>
                         </div>
 
                         <button type="submit"
-                                class="bg-cyan-500 text-white px-6 py-2 rounded-md hover:bg-cyan-600 transition-colors">
+                                class="bg-[#f7971e] hover:bg-[#ff9f0e] text-white px-6 py-2 rounded-md transition-colors duration-300">
                             Submit
                         </button>
                     </form>
                 </div>
 
-                <div class="bg-blue-100 p-6 rounded-lg shadow">
-                    <h2 class="text-xl font-bold mb-4">Text Editor</h2>
-                    <div class="text-3xl">
+                <div class="bg-[#18181b] bg-opacity-90 p-6 rounded-lg shadow">
+                    <h2 class="text-xl font-semibold mb-4 text-white">Text Editor</h2>
+                    <div id="editor" class="text-3xl text-white">
                         
                     </div>
                 </div>

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const lien = document.createElement('a');
             lien.href = `/exo/${exercice.fichier}`;
             lien.textContent = exercice.nom;
-            lien.className = 'text-blue-600 hover:text-blue-800 underline';
+            lien.className = 'text-[#fb923c] hover:text-[#f97316] underline';
             item.appendChild(lien);
             liste.appendChild(item);
         });
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (container) {
         const titre = document.createElement('h2');
         titre.textContent = 'Liste des exercices';
-        titre.className = 'text-2xl font-bold mb-4';
+        titre.className = 'text-2xl text-white font-bold mb-4';
         container.appendChild(titre);
         container.appendChild(creerListeExercices());
     }

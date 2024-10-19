@@ -10,7 +10,7 @@ class Imc {
   }
 
   display() {
-    console.log(`${this.nom} pèse ${this.poids} kg pour ${this.taille} m et a un IMC de ${this.calculerImc()}.`);
+    return `${this.nom} pèse ${this.poids} kg pour ${this.taille} m et a un IMC de ${this.calculerImc()}.`;
   }
 }
 
@@ -24,8 +24,12 @@ document.getElementById('imcForm').addEventListener('submit', function(e) {
     
     const personne = new Imc(nom, poids, taille);
     
-    document.getElementById('result').innerHTML = personne.display();
-  });
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = personne.display();
+    resultDiv.classList.add('p-4', 'bg-gray-800', 'rounded-md', 'mt-4');
+
+    console.log(personne.display()); // Affichage dans la console également
+});
 
 // Programme principal
 const list = [
@@ -34,4 +38,4 @@ const list = [
   new Imc("Charlie", 70, 1.75)
 ];
 
-list.forEach(personne => personne.display());
+list.forEach(personne => console.log(personne.display()));
