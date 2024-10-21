@@ -24,6 +24,7 @@ export function createHeader() {
               <a href="/exo/dom.html" class="block px-4 py-2 hover:bg-gray-500 text-gray-200">Exo DOM Event</a>
               <a href="/exo/class.html" class="block px-4 py-2 hover:bg-gray-500 text-gray-200">Exercice Class</a>
               <a href="/exo/pme.html" class="block px-4 py-2 hover:bg-gray-500 text-gray-200">Exercice PME</a>
+              <a href="/exo/api_user.html" class="block px-4 py-2 hover:bg-gray-500 text-gray-200">Exercice API User</a>
             </div>
           </li>
           <li class="relative" id="dropdown-tp">
