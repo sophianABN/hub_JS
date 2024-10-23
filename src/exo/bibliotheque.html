@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Bibliothèque</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-black">
+    <div class="max-w-6xl mx-auto p-6">
+        <div id="header-container" class="mb-6"></div>
+        <main class="bg-[#0e0e0e] shadow-md rounded-lg p-6">
+            <h1 class="text-3xl font-bold mb-8 text-white">Gestion de Bibliothèque</h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-[#18181b] bg-opacity-90 p-6 rounded-lg shadow">
+                    <h2 class="text-2xl font-semibold mb-4 text-white">Ajouter un livre</h2>
+                    <form id="ajouterLivreForm" class="space-y-4">
+                        <div>
+                            <label for="titre" class="block text-sm font-medium text-gray-200">Titre</label>
+                            <input type="text" id="titre" name="titre" required
+                                   class="mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="auteur" class="block text-sm font-medium text-gray-200">Auteur</label>
+                            <input type="text" id="auteur" name="auteur" required
+                                   class="mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <button type="submit"
+                                class="bg-[#f7971e] hover:bg-[#ff9f0e] text-white px-4 py-2 rounded-md transition-colors duration-300">
+                            Ajouter le livre
+                        </button>
+                    </form>
+                </div>
+
+                <div class="bg-[#18181b] bg-opacity-90 p-6 rounded-lg shadow">
+                    <h2 class="text-2xl font-semibold mb-4 text-white">Emprunter/Retourner un livre</h2>
+                    <form id="gererLivreForm" class="space-y-4">
+                        <div>
+                            <label for="titreLivre" class="block text-sm font-medium text-gray-200">Titre du livre</label>
+                            <input type="text" id="titreLivre" name="titreLivre" required
+                                   class="mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="flex space-x-4">
+                            <button type="submit" id="emprunterBtn"
+                                    class="bg-[#f7971e] hover:bg-[#ff9f0e] text-white px-4 py-2 rounded-md transition-colors duration-300">
+                                Emprunter
+                            </button>
+                            <button type="submit" id="retournerBtn"
+                                    class="bg-[#f7971e] hover:bg-[#ff9f0e] text-white px-4 py-2 rounded-md transition-colors duration-300">
+                                Retourner
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-[#18181b] bg-opacity-90 p-6 rounded-lg shadow">
+                <h2 class="text-2xl font-semibold mb-4 text-white">Liste des livres</h2>
+                <div id="livres" class="space-y-2 text-white"></div>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="bibliotheque.js"></script>
+</body>
+</html>
