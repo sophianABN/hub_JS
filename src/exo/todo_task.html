@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body class="bg-black">
-    <!-- Ajout de la même structure que todo_user -->
+    <div id="header-container" class="mb-6"></div>
     <div class="max-w-6xl mx-auto p-6">
-        <div id="header-container" class="mb-6"></div>
         <main class="bg-[#0e0e0e] shadow-md rounded-lg p-6">
             <h1 class="text-3xl font-bold mb-8 text-white">Ma Todo List</h1>
             
@@ -36,7 +35,7 @@
                 </ul>
             </div>
 
-            <!-- Nouveau conteneur pour le bouton de déconnexion -->
+            <!-- Conteneur pour le bouton de déconnexion -->
             <div class="flex justify-center mt-8">
                 <button id="logoutButton" 
                         class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-md transition-colors duration-300">
@@ -44,7 +43,9 @@
                 </button>
             </div>
         </main>
+        <div id="footer-container"></div>
     </div>
+    
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>

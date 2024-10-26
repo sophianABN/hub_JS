@@ -5,7 +5,7 @@ function initializeApp() {
     initializeFirebase();
     setupValidation();
     setupEventListeners();
-    initializeButtonText(); // Ajout de l'initialisation du texte du bouton
+    initializeButtonText(); 
 }
 
 // Configuration et initialisation de Firebase
@@ -43,7 +43,7 @@ function setupEventListeners() {
     document.getElementById('registerForm').addEventListener('submit', handleRegister);
 }
 
-// Nouvelle fonction pour initialiser le texte du bouton
+// Fonction pour initialiser le texte du bouton
 function initializeButtonText() {
     const loginForm = document.getElementById('loginForm');
     const switchButton = document.getElementById('switchForm');
@@ -206,7 +206,7 @@ function getErrorMessage(error) {
     }
 }
 
-// Ajoutez cette fonction après une inscription réussie
+// Fonction pour créer le profil utilisateur
 async function createUserProfile(user) {
     try {
         const userRef = firebase.database().ref(`users/${user.uid}`);

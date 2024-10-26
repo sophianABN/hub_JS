@@ -10,7 +10,7 @@ function initializeApp() {
     checkAuth();
 }
 
-// Configuration Firebase (votre code existant)
+// Configuration Firebase 
 function initializeFirebase() {
     const firebaseConfig = {
         apiKey: import.meta.env.VITE_FIREBASE_TODOLIST_API_KEY,
@@ -46,7 +46,7 @@ function setupApp(user) {
     setupReferences(user);
     setupEventListeners();
     loadTasks();
-    setupLogoutButton();
+    setupLogoutButton(); 
 }
 
 // Configuration des références
@@ -214,12 +214,8 @@ function setupEventListeners() {
 
 // Configuration du bouton de déconnexion
 function setupLogoutButton() {
-    const headerContainer = document.getElementById('header-container');
-    const logoutButton = document.createElement('button');
-    logoutButton.className = 'bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md float-right';
-    logoutButton.textContent = 'Déconnexion';
+    const logoutButton = document.getElementById('logoutButton');
     logoutButton.onclick = handleLogout;
-    headerContainer.appendChild(logoutButton);
 }
 
 // Gestion de la déconnexion
@@ -232,7 +228,7 @@ async function handleLogout() {
     }
 }
 
-// Nouvelle fonction pour basculer le statut d'une tâche
+// Fonction pour basculer le statut d'une tâche
 async function toggleTaskStatus(taskId, currentStatus) {
     try {
         const newStatus = currentStatus === 'completed' ? 'active' : 'completed';
