@@ -1,9 +1,25 @@
 import { createHeader } from './components/header.js';
+import { Footer } from './components/footer.js';
+import { fetchQuote, displayQuote } from './components/quote.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  // Ajout du header
   const headerContainer = document.getElementById('header-container');
   if (headerContainer) {
     headerContainer.innerHTML = createHeader();
+  }
+
+  // Ajout de la citation
+  const quoteContainer = document.getElementById('quote-container');
+  if (quoteContainer) {
+    const quote = await fetchQuote();
+    quoteContainer.innerHTML = displayQuote(quote);
+  }
+
+  // Ajout du footer
+  const footerContainer = document.getElementById('footer-container');
+  if (footerContainer) {
+    footerContainer.appendChild(Footer());
   }
 
   // Gestion des menus dropdowns

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-black">
+    <!-- Ajout de la même structure que todo_user -->
+    <div class="max-w-6xl mx-auto p-6">
+        <div id="header-container" class="mb-6"></div>
+        <main class="bg-[#0e0e0e] shadow-md rounded-lg p-6">
+            <h1 class="text-3xl font-bold mb-8 text-white">Ma Todo List</h1>
+            
+            <!-- Formulaire d'ajout de tâche -->
+            <form id="addTaskForm" class="mb-8">
+                <div class="flex gap-4">
+                    <input type="text" 
+                           id="taskInput" 
+                           placeholder="Nouvelle tâche" 
+                           required
+                           class="flex-1 px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit"
+                            class="bg-[#f7971e] hover:bg-[#ff9f0e] text-white px-6 py-2 rounded-md transition-colors duration-300">
+                        Ajouter
+                    </button>
+                </div>
+            </form>
+
+            <!-- Liste des tâches -->
+            <div class="bg-[#18181b] bg-opacity-90 rounded-lg p-6">
+                <h2 class="text-2xl font-semibold mb-4 text-white">Mes tâches</h2>
+                <ul id="taskList" class="space-y-3">
+                    <!-- Les tâches seront injectées ici par JavaScript -->
+                </ul>
+            </div>
+
+            <!-- Nouveau conteneur pour le bouton de déconnexion -->
+            <div class="flex justify-center mt-8">
+                <button id="logoutButton" 
+                        class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-md transition-colors duration-300">
+                    Déconnexion
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="todo_task.js"></script>
+</body>
+</html>

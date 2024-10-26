@@ -10,11 +10,11 @@
     <div class="max-w-6xl mx-auto p-6">
         <div id="header-container" class="mb-6"></div>
         <main class="bg-[#0e0e0e] shadow-md rounded-lg p-6">
-            <h1 class="text-3xl font-bold mb-8 text-white">Firebase User Management</h1>
+            <h1 class="text-3xl font-bold mb-8 text-white">Gestion des utilisateurs Firebase</h1>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-[#18181b] bg-opacity-90 p-6 rounded-lg shadow">
-                    <h2 class="text-2xl font-semibold mb-4 text-white">Add User</h2>
+                    <h2 class="text-2xl font-semibold mb-4 text-white">Ajouter un utilisateur</h2>
                     <form id="add-user-form" class="space-y-4">
                         <div>
                             <input type="text" name="name" class="user-input mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" data-key="name" placeholder="Name" required>
@@ -26,7 +26,7 @@
                             <input type="email" name="email" class="user-input mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" data-key="mail" placeholder="Email" required>
                         </div>
                         <button id="add-user-btn" type="submit" class="bg-[#f7971e] hover:bg-[#ff9f0e] text-white px-4 py-2 rounded-md transition-colors duration-300">
-                            Add User
+                            Ajouter
                         </button>
                     </form>
                 </div>
@@ -45,14 +45,14 @@
                             <input type="email" name="email" class="edit-user-input mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" data-key="mail" placeholder="Email" required>
                         </div>
                         <button id="edit-user-btn" type="submit" class="bg-[#f7971e] hover:bg-[#ff9f0e] text-white px-4 py-2 rounded-md transition-colors duration-300">
-                            Save Changes
+                            Enregistrer
                         </button>
                     </form>
                 </div>
             </div>
 
             <div class="mt-8 bg-[#18181b] bg-opacity-90 p-6 rounded-lg shadow">
-                <h2 class="text-2xl font-semibold mb-4 text-white">User List</h2>
+                <h2 class="text-2xl font-semibold mb-4 text-white">Liste des utilisateurs</h2>
                 <ul id="user-list" class="space-y-2 text-white"></ul>
             </div>
         </main>

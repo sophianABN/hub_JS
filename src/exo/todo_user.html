@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Utilisateurs</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-black">
+    <div class="max-w-6xl mx-auto p-6">
+        <div id="header-container" class="mb-6"></div>
+        <main class="bg-[#0e0e0e] shadow-md rounded-lg p-6 flex flex-col items-center">
+            <h1 class="text-3xl font-bold mb-8 text-white text-center">Se connecter pour accéder à votre liste de tâches</h1>
+            
+            <div class="flex flex-col items-center justify-center w-full max-w-4xl">
+                <!-- Formulaire de connexion -->
+                <form id="loginForm" class="bg-[#18181b] bg-opacity-90 p-6 rounded-lg shadow w-full max-w-md">
+                    <h2 class="text-2xl font-semibold mb-4 text-white text-center">Connexion</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <input type="email" 
+                                   id="loginEmail" 
+                                   placeholder="Email" 
+                                   required
+                                   class="mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <span id="loginEmailError" class="text-red-500 text-sm mt-1"></span>
+                        </div>
+                        <div>
+                            <input type="password" 
+                                   id="loginPassword" 
+                                   placeholder="Mot de passe" 
+                                   required
+                                   class="mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <span id="loginPasswordError" class="text-red-500 text-sm mt-1"></span>
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit"
+                                    class="bg-[#f7971e] hover:bg-[#ff9f0e] text-white px-4 py-2 rounded-md transition-colors duration-300 w-full">
+                                Se connecter
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Formulaire d'inscription -->
+                <form id="registerForm" class="bg-[#18181b] bg-opacity-90 p-6 rounded-lg shadow hidden w-full max-w-md">
+                    <h2 class="text-2xl font-semibold mb-4 text-white text-center">Inscription</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <input type="email" 
+                                   id="registerEmail" 
+                                   placeholder="Email" 
+                                   required
+                                   class="mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <span id="registerEmailError" class="text-red-500 text-sm mt-1"></span>
+                        </div>
+                        <div>
+                            <input type="password" 
+                                   id="registerPassword" 
+                                   placeholder="Mot de passe" 
+                                   required
+                                   class="mt-1 block w-full px-4 py-2 bg-[#433b36e6] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <span id="registerPasswordError" class="text-red-500 text-sm mt-1"></span>
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit"
+                                    class="bg-[#f7971e] hover:bg-[#ff9f0e] text-white px-4 py-2 rounded-md transition-colors duration-300 w-full">
+                                S'inscrire
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="mt-6 text-center">
+                <button id="switchForm" 
+                        class="bg-[#18181b] hover:bg-[#27272a] text-white px-6 py-2 rounded-md transition-colors duration-300">
+                </button>
+            </div>
+        </main>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="todo_user.js"></script>
+</body>
+</html>
